@@ -91,26 +91,27 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: #fff; 
     background-color: #f4f4f4;
     text-align: center;
-    color: #333;
+    overflow-x: hidden; 
 }
 
 header {
-    background-color: #666; 
-    padding: 20px 0;
+  
+    height: 10vh; 
+    background-color: #4a4a4a;
+    padding: 1vh 0; 
     color: #fff;
-}
-
-.header-content {
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
 }
 
 h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #fff;
+    font-size: 1.5em; 
+    margin: 0;
+    color: #ffd700;
 }
 
 nav ul {
@@ -126,83 +127,119 @@ nav a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px 10px;
-}
-
-nav a:hover {
-    color: #ffd700;
+    font-size: 0.8em; 
+    padding: 0;
 }
 
 
-.team-container {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.team-container h2 {
-    text-align: left;
-    margin-bottom: 30px;
-    font-size: 1.8em;
-}
-
-.team-grid {
+.hero-section {
+   
+    height: 55vh; 
+    
+   
+    background: url(indexpage.jpeg)no-repeat center center/cover;
+    
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
+    align-items: center; 
+    justify-content: center; 
+    
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
 
-.team-member {
-    background-color: #fff;
+.hero-content {
+  
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 3vh 5vw; 
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 0; 
+}
+
+.hero-content h2 {
+    color: #ffd700;
+    font-size: 2.5em; 
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.hero-content p.offer {
+    color: #ff4500; 
+    font-weight: bold;
+    font-size: 1.2em; 
+}
+
+
+.info-cards {
+    
+    height: 25vh; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px; 
+    padding: 0 10px; 
+    background-color: #ffffff; 
+    color: #333; 
+}
+
+.card {
+    background-color: #ffffff; 
     border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    width: 200px;
-    text-align: center;
-    padding: 15px 0 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 85%; 
+    padding: 10px; 
+    width: 30%;
+    max-width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
 }
 
-.profile-image {
-    width: 150px;
-    height: 200px;
-    margin: 0 auto 15px auto;
-    overflow: hidden;
-    border-radius: 10px; 
-    position: relative;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+.card h3 {
+    color: #4a4a4a;
+    margin-top: 0;
+    border-bottom: 2px solid #ff4500;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    font-size: 1em; 
 }
 
-.profile-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%/70%; 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.team-member h4 {
-    margin: 5px 0 2px 0;
-    color: #333;
-}
-
-.team-member p {
-    font-size: 0.9em;
+.card p {
+    font-size: 0.8em; 
     color: #666;
-    margin: 0;
 }
+
+.card a {
+    color: #ff4500;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8em;
+}
+
 
 footer {
-    background-color: #666;
+   
+    height: 10vh; 
+    background-color: #333;
     color: #ccc;
-    padding: 10px 0;
     font-size: 0.9em;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+footer p {
+    margin: 0;
+}
 
 menu.html
 <!DOCTYPE html>
