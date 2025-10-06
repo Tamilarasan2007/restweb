@@ -86,7 +86,7 @@ index.html
 </body>
 </html>
 
-syle-index.css
+style-index.css
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -451,75 +451,121 @@ team.html
 </html>
 
 style-admin.css
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quantum Kitchen - Our Team</title>
-    <link rel="stylesheet" href="style-admin.css">
-</head>
-<body>
-    <header>
-        <div class="header-content">
-            <h1>Quantum Kitchen</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="team.html">Our Team</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    color: #333;
+}
 
-    <main class="team-container">
-        <h2>Our Culinary Engineers</h2>
-        <div class="team-grid">
-            <div class="team-member">
-                <div class="profile-image">
-                    <img src="mypic.png" alt="Chef">
-                </div>
-                <h4>Mr Tamilarasan R</h4>
-                <p>Executive Chef & Founder</p>
-            </div>
-            <div class="team-member">
-                <div class="profile-image">
-                    <img src="Arun.png" alt="Sous Chef Kim">
-                </div>
-                <h4>Mr Arun R</h4>
-                <p>Sous Chef / Molecular Specialist</p>
-            </div>
-            <div class="team-member">
-                <div class="profile-image">
-                    <img src="MP.png" alt="Pastry Chef Lisa">
-                </div>
-                <h4>Mr MurugaPerumal</h4>
-                <p>Pastry & Dessert Alchemist</p>
-            </div>
-            <div class="team-member">
-                <div class="profile-image">
-                    <img src="santhosh.png" alt="Manager Emily">
-                </div>
-                <h4>Mr Santhosh</h4>
-                <p>Restaurant Manager</p>
-            </div>
-            <div class="team-member">
-                <div class="profile-image">
-                    <img src="dheena.png" alt="Service Manager">
-                </div>
-                <h4>Mr Dheena</h4>
-                <p>Lead Sommelier & Service</p>
-            </div>
-        </div>
-    </main>
+header {
+    background-color: #666; 
+    padding: 20px 0;
+    color: #fff;
+}
 
-    <footer>
-        <p>© 2025 Quantum Kitchen | Developed by Tamilarasan R - 25009942</p>
-    </footer>
-</body>
-</html>
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+
+.team-container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-container h2 {
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.team-member {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    padding: 15px 0 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    width: 150px;
+    height: 200px;
+    margin: 0 auto 15px auto;
+    overflow: hidden;
+    border-radius: 10px; 
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%/70%; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.team-member h4 {
+    margin: 5px 0 2px 0;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0;
+}
+
+footer {
+    background-color: #666;
+    color: #ccc;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
 
 contact.html
 <!DOCTYPE html>
